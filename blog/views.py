@@ -15,10 +15,10 @@ from django.views.generic import (
 
 # posts =[
 #     {
-#         'author' : 'CoreyMS',
+#         'author' : 'UserA',
 #         'title': 'Blog Post1',
 #         'content' : 'First post content',
-#         'date_posted' : 'August 27 2007',
+#         'date_posted' : 'August 27 2018',
 #
 #     },
 #
@@ -26,7 +26,7 @@ from django.views.generic import (
 #         'author': 'Vicky',
 #         'title': 'Blog Post2',
 #         'content': 'Second post content',
-#         'date_posted': 'March 27 2007',
+#         'date_posted': 'March 27 2018',
 #
 #     }
 # ]
@@ -45,8 +45,6 @@ class PostListView(ListView):
     context_object_name = 'posts'
     ordering = ['-date_posted']
     paginate_by = 10
-
-
 
 
 class PostDetalView(DetailView):
