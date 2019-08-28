@@ -37,7 +37,7 @@ ul {
 }
 
 .article-title {
-  color: #444444;
+  color: rgba(234, 50, 191, 0.32);
 }
 
 a.article-title:hover {
